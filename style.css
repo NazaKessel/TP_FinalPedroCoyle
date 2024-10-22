@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(media.css);
+/* este css se encarga del estilo estandar de la pagina */
+/* definir colores */
+:root{
+    --rosa : #e989ae;
+    --rosa-fuerte: #e63c61;
+    --naranja: #f0692a;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #c5c3c3;
+    --fondo: #eed6b1c2;
+    --boxShadow:#260d0dc4;
+
+    --border-color: #fff5;
+    --w-image: 700px;
+    --calculate: calc(3 / 2);
+
+    --footer: #92836ce1;
+}
+/* standar */
+*{  
+padding: 0;
+margin: 0;
+font-family: "Abel", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+html, body{
+background-color: var(--fondo);
+}
+h1{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 90px;
+    opacity: 85%;
+}
+h2{
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    opacity: 85%;
+}
+a{
+    margin: 0 20px 0 20px; /*arriba, derecha, abajo, izquierda*/
+    color: #000;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: var(--blanco);
+}
+a:hover{
+    color: #e63c61;
+}
+button{
+    width: 150px;
+    height: 30px;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 10px;
+    transition: color 0.3s; /*transicion sueve*/
+}
+button:hover{
+    color: var(--rosa-fuerte);
+}
+}
+span{
+    font-weight: bold;
+    color: var(--rosa-fuerte);
+}
+.precio{
+    color: var(--rosa-fuerte);
+    font-weight: bold;
+}
+.precio:hover{
+    color: var(--rosa);
+}
+
+/* ------------HEADER----------------*/
+header{
+    max-width: 100%;
+    height: 50px;
+    border: 1px solid var(--gris);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    background-color: var(--blanco);
+    position: relative;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+header h2{
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  width: 200px;
+}
+header nav{
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------FOOTER ----------------*/
+footer{
+    max-width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0%;
+    position: relative;
+    background: var(--footer);
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    color: var(--blanco);
+    font-size: 30px;
+    padding: 20px;
+    top: 40px;
+    display: none;
+}
+footer .img-footer img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -160px;
+    bottom: 0;
+}

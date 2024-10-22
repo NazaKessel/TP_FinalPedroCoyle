@@ -1,0 +1,109 @@
+@import url(style.css);
+@import url(media.css);
+@import url(carousel.css);
+/* .banner{
+    width: 100%;
+    height: 300px;
+    border: solid 1px rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+article{
+    width: 300px;
+    height: 600px;
+    border: solid 1px black;
+}
+.tarjetas{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 0 30px 0;
+    position: relative;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--blanco);
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0,2);
+    overflow: hidden;
+    transition: all 0,5s ease;
+}
+.card:hover{
+    box-shadow: 10px 10px 5px var(--boxShadow);
+    transform: translateY(-3%);
+} 
+.card figure{
+    height: 70%;
+} */
+
+.oferta{
+   width: 100%;
+   height: 650px;
+   overflow: hidden;
+}
+.oferta img{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+   margin: 15px;
+}
+/* ----------SECCIONES-------- */
+.productos{
+    max-width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos .card{
+    width: 200px;
+    height: 300px;
+    background-color: var(--blanco);
+    border-radius: 10%;
+    padding: 5px;
+    display: grid;
+    grid-row: 50% 40%;
+    overflow: hidden;
+    margin: 15px 15px;
+}
+.productos .card .card-titulo{
+    font-size: clamp(10px, 4vw, 36px);
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.productos .card img{
+    max-width: 100%;
+    display: block;
+    margin: 0% auto;
+}
+.productos .card .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* fondo seccion platos */
+#platos .fondo{
+   position: absolute;
+   width: 800px;
+   height: 900px;
+   left: -300px;
+   top: 600px;
+   opacity: 50%;
+   z-index: 1;
+}
+#platos .card{
+    z-index: 2;
+}
+.platos-titulo{
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+

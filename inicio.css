@@ -1,0 +1,174 @@
+@import url(style.css);
+@import url(media.css);
+
+/* desplazamiento bloqueado */
+html, body{
+    overflow: hidden;
+}
+
+/*------------ SLOGAN -------------*/
+.slogan{
+    max-width: 100%;
+    width: 100%;
+    margin-top: 130px;
+    position: relative;
+    z-index: 2;
+    position: relative;
+    top: 50px;
+}
+.slogan .register, h1, p{
+    display: flex;
+    justify-content: center;
+}
+.slogan p{
+    position: relative;
+    top: -35px;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 90%;
+}
+.register{
+    border-radius: 3px;
+    width: 300px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+/*----------- DECORACION --------------*/
+.box{
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    padding: 100px 30px;
+}
+/* z-index */
+.caja1{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    z-index: 1;
+    left: 160px;
+    top: 40px;
+    background-image: url(https://cdn3d.iconscout.com/3d/premium/thumb/maki-sushi-10215487-8264459.png);
+    background-size: cover;
+}
+.caja2{
+    width: 200px;
+    height: 220px;
+    position: relative;
+    z-index: 3;
+    background-image: url(img/maki2.png);
+    background-size: cover;
+}
+.caja3{
+    width: 500px;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+    top: -160px;
+    left: -50px;
+    background-image: url(img/ramen.png);
+    background-size: cover;
+}
+.caja4{
+    width: 800px;
+    height: 450px;
+    position: relative;
+    left: 200px;
+    top: -700px;
+    background-image: url(img/poke.png);
+    background-size: cover;
+}
+.caja5{
+    width: 300px;
+    height: 240px;
+    position: relative;
+    left: 500px;
+    top: -930px;
+    background-image: url(img/sushi3.png);
+    background-size: cover;
+    z-index: 7;
+
+}
+.caja6{
+    width: 650px;
+    height: 400px;
+    position: relative;
+    left: 1000px;
+    top: -1250px;
+    border: solod 1px black;
+   
+    background-size: cover;
+    z-index: 4;
+}
+.caja7{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 940px;
+    top: -1500px;
+    z-index: 7;
+    background-image: url(img/sushi5.png);
+    background-size: cover;
+}
+.caja8{
+    width: 130px;
+    height: 120px;
+    position: relative;
+    left: 1500px;
+    top: -2050px;
+    z-index: 6;
+    background-image: url(img/sushi.png);
+    background-size: cover;
+}
+.caja9{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    left: 1400px;
+    top: -2050px;
+    z-index: 4;
+    background-image: url(img/mochi.png);
+   
+    background-size: cover;
+}
+.caja10{
+    /* mochi rosa */
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: -2350px;
+    left: 1300px;
+    background-image: url(img/mochi2.png);
+    background-size: cover;
+    z-index: 8;
+}
+.caja11{
+    /* arroz */
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: -2600px;
+    left: 700px;
+    background-image: url(img/arroz.png);
+    background-size: cover;
+    z-index: 5;
+}
+.caja12{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    top: -3050px;
+    left: 1000px;
+    z-index: 2;
+    background-image: url(img/alberja.png);
+    background-size: cover;
+}

@@ -1,0 +1,124 @@
+/*---------- MEDIA QUERY HEADER------------ */
+/* @media (max-width: 768px){
+    /* vista mobil  */
+/* header{
+    height: 100px;
+   
+}
+
+} */ 
+
+/* -------------MEDIA QUERY INICIO -------------*/
+
+@media ((min-width: 481px) and (max-width: 768px)){
+    /* tablet */
+    /* arreglar: titulo, imagenes y hacer una lista desplegable */
+
+    .slogan h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .box .caja1{
+        top: -30px;
+        left: 200px;
+        width: 200px;
+        height: 200px;
+        margin: 0% auto;
+    }
+    .box .caja2{
+        top: -120px;
+        width: 400px;
+        height: 400px;
+    }
+ 
+    .box .caja3, .caja4, .caja5, .caja9{
+        display: none;
+    }
+   
+}
+@media ((min-width: 769px) and (max-width: 1279px)){
+    /* notebook */
+}
+@media (min-width: 1280px){
+    /* desktops */
+}
+
+/* HEADER */
+@media ((min-width: 481px) and (max-width: 768px)){
+    /* tablet */
+    header nav, .iniciarSesion{
+        display: none;
+    }
+    header .btn-group{
+        display: flex;
+        position: relative;
+        top: 100px;
+    }
+   
+}
+@media ((min-width: 769px) and (max-width: 1279px)){
+    /* notebook */
+}
+@media (min-width: 1280px){
+    /* desktops */
+}
+
+
+
+/* -------------------PAGINA PRINCIPAL----------------- */
+@media ((min-width: 481px) and (max-width: 768px)){
+    /* tablet */
+   
+}
+@media ((min-width: 769px) and (max-width: 1279px)){
+    /* notebook */
+}
+@media (min-width: 1280px){
+    /* desktops */
+}
+
+/*------------- MEDIA CARRUSEL PAGINA PRINCIPAL--------------- */
+/* se rompe en el 1024 al 1500 */
+@media screen and (max-width: 1500px) {
+    :root{
+        --w-image: 600px;
+    };
+    
+}
+@media screen and (max-width: 1325px){
+    :root{
+        --w-image: 500px;
+    }
+    .carousel .list .item .main-content .content h2{
+        font-size: 4em;
+    };
+}
+@media screen and (max-width: 1023px){
+    :root{
+        --calculate: 1;
+        --w-image: 400px; 
+    }
+    .carousel .list .item .main-content .content h2{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 680px){
+    .carousel .list .item .image{
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+    .carousel .list .item .image figcaption{
+        width: 100%;
+        text-align: center;
+    }
+    .carousel .list .item .main-content .content{
+        display: none;
+    }
+    .arrows{
+        left: 50%;
+        justify-content: center;
+    }
+}

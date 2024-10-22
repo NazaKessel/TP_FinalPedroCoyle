@@ -1,0 +1,105 @@
+@import url(style.css);
+@import url(media.css);
+
+
+section{
+    display: flex;
+}
+.fondo{
+    width: 100px;
+    height: 100px;
+    background-image: url(img/salmon-log.png);
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-left: 1100px;
+    margin-top: -20px;
+
+}
+.title-register{
+    text-align: center;
+}
+form h2{
+    color: var(--negro);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+input{
+    font: sans-serif;
+}
+form{
+    margin: 40px auto;
+    padding: 30px 10px;
+    background-color: var(--blanco);
+    width: min(350px, 90%);
+    border-radius: 10px;
+}
+/* ESTILOS INPUTS */
+.form-text{
+    color: var(--gris);
+}
+.form-submit{
+    background-color: var(--rosa);
+    height: 30px;
+    border: solid 2px var(--rosa);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-submit:hover{
+    background-color: var(--rosa-fuerte);
+    border: solid 2px var(--rosa-fuerte);
+    color: var(--blanco);
+}
+.form-contraseña{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 25px;
+}
+
+.form-inputs{
+    margin: 10px;
+    display: grid;
+    gap: 15px;
+}
+.form-lable{
+     width: 100%;  /*para que abarque el 100% del contenedor */
+     display: grid;
+    grid-template-areas: "input";
+}
+
+/*para ubicar el texto dentro del input*/
+.form-input{
+    grid-area: input; 
+    width: 100%;
+    border: solid 1px var(--gris);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.form-text{
+    grid-area: input;
+}
+
+/* ANIMACION INPUT  */
+.form-text{
+    z-index: 2;
+    width: max-content;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+
+    transform-origin: left center;
+    transition: transform .3s;
+}
+.form-input:focus + .form-text, .form-input:not(:placeholder-shown) + .form-text{ /*cuando haga foco en el input, se activa su contenedor hermano (form text, que sufre cambios:*/
+/*el placeholder deja de mostrarse cuando se ingresa un texto*/
+    background-color: var(--blanco);
+    color: var(--rosa);
+    font-size: 20px;
+    transform: translateY(-50%) scale(.7); /*se translada verticalmente*/
+}
